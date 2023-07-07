@@ -1,0 +1,3 @@
+etc/zypp
+var/lib/zypp
+var/cache/zypp

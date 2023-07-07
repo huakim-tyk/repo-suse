@@ -1,0 +1,7 @@
+[KDE_Extra]
+name=Additional packages maintained by the KDE team (openSUSE_Tumbleweed)
+enabled=1
+autorefresh=0
+baseurl=https://download.opensuse.org/repositories/KDE:/Extra/openSUSE_Tumbleweed/
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/KDE:/Extra/openSUSE_Tumbleweed/repodata/repomd.xml.key

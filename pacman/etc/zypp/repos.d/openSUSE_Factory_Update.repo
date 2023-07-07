@@ -1,0 +1,7 @@
+[openSUSE_Factory_Update]
+name=openSUSE Factory emergency update project (standard)
+enabled=1
+autorefresh=0
+baseurl=https://download.opensuse.org/repositories/openSUSE:/Factory:/Update/standard/
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/openSUSE:/Factory:/Update/standard/repodata/repomd.xml.key
