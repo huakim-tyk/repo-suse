@@ -1,7 +1,8 @@
 apt.list
-apt-base.sh
-apt-gui.sh
-apt-plasma.sh
+aptl.list
+apt-base.pl
+apt-gui.pl
+apt-plasma.pl
 aptat.sh
 aptdt.sh
 aptbk.sh
@@ -12,7 +13,7 @@ clonerepo.pl
 copy.list
 copy.sh
 cpangen.pl
-etc/zypp
+etc/dnf
 extra.list
 genrepo.sh
 listfiles.sh

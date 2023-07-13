@@ -5,5 +5,5 @@ dest="${1}/"
 . "${dir}copy_func.sh"
 
 parsefile "apt.list" 'cldir'
-copy "etc/zypp"
-#ln -sfT "dnf/yum.repos.d" "${dest}/etc/yum.repos.d"
+copy "etc/dnf"
+parsefile "aptl.list" 'rlnk'
