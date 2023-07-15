@@ -36,8 +36,6 @@ geany
 xmessage
 xorg-x11-server
 xorg-x11-server-extra
-yast2
-yast2-qt
 );
 
 unless (caller){

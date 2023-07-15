@@ -3,6 +3,7 @@ aptl.list
 apt-base.pl
 apt-gui.pl
 apt-plasma.pl
+apt-rootfs.pl
 aptat.sh
 aptdt.sh
 aptbk.sh
