@@ -33,4 +33,5 @@ i extra "${smp}"
 chroot . /bin/bash /extra/pacman/copy.sh
 chroot . /bin/bash /extra/pacman/user.sh
 chroot . /bin/bash /extra/pacman/aptdt.sh
+chroot . /bin/dracut -f
 umount dev proc sys extra

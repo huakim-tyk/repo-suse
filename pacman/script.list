@@ -13,6 +13,7 @@ clonerepo.pl
 copy.list
 copy.sh
 cpangen.pl
+dcat.sh
 etc/dnf
 extra.list
 genrepo.sh

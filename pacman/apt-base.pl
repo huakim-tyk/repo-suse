@@ -97,9 +97,10 @@ at-spi2-core
 #"sudo", "usr-is-merged", "whois", "whiptail", "wpasupplicant";
 
 
-#push @pkgs,
-# qw(
-#realtek-firmware
+push @pkgs, qw(
+kernel-liquorix
+kernel-firmware-realtek
+);
 #intel-compute-runtime
 #mesa-dri-drivers
 #nvidia-gpu-firmware
