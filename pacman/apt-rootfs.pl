@@ -5,31 +5,32 @@ $Data::Dumper::Terse=1;
 $Data::Dumper::Indent=0;
 
 push @pkgs, qw(                   
- ca-certificates                       
- ca-certificates-mozilla
- coreutils                             
- dhcp-client                          
- file 
- glibc                                 
- glibc-locale-base                            
- glibc-i18ndata
- hostname
- inotify-tools                        
- less
- lsof
- net-tools                               
- nano                                  
- NetworkManager                         
- pciutils                              
- psmisc     
- lsb-release                    
- shadow                                
- sudo                                            
- which                                 
- whois                                                                   
- wpa_supplicant                                                       
- zypper                                
- zypper-aptitude
+NetworkManager
+ca-certificates
+ca-certificates-mozilla
+coreutils
+dhcp-client
+file
+glibc
+glibc-i18ndata
+glibc-locale-base
+hostname
+inotify-tools
+less
+lsb-release
+lsof
+nano
+net-tools
+pciutils
+psmisc
+sed
+shadow
+sudo
+which
+whois
+wpa_supplicant
+zypper
+zypper-aptitude
 );
 
 our sub load {

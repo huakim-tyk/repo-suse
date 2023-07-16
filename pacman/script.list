@@ -1,6 +1,7 @@
 apt.list
 aptl.list
 apt-base.pl
+apt-gnome.pl
 apt-gui.pl
 apt-plasma.pl
 apt-rootfs.pl

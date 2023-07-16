@@ -14,11 +14,10 @@ gtk2-metatheme-breeze
 gtk3-metatheme-breeze
 gtk4-metatheme-breeze
 gwenview
-kdeconnect-kde
-kde-inotify-survey
-kde-gtk-config
-systemsettings5
 kcm_sddm
+kde-gtk-config
+kde-inotify-survey
+kdeconnect-kde
 kdialog
 kio-fuse
 kmenuedit5
@@ -35,6 +34,7 @@ plasma5-session
 plasma5-session-wayland
 plasma5-systemmonitor
 sddm
+systemsettings5
 upower
 vlc
 xdg-desktop-portal-kde
