@@ -24,6 +24,7 @@ gnome-menus
 gnome-session
 gnome-session-wayland
 gnome-shell-extensions-common
+gnome-shell-extension-appindicator
 gnome-software
 gnome-system-monitor
 gnome-themes
@@ -36,7 +37,7 @@ secrets
 thunar
 thunar-archive-plugin
 thunar-volman
-xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
 xfce4-terminal
 unzip
 );
