@@ -14,6 +14,7 @@ gtk2-metatheme-breeze
 gtk3-metatheme-breeze
 gtk4-metatheme-breeze
 gwenview
+keepassxc
 kcm_sddm
 kde-gtk-config
 kde-inotify-survey

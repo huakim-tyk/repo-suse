@@ -7,10 +7,11 @@ our @pkgs;
 push @pkgs, qw(
 dbus-1-x11
 geany
-indic-fonts
 pavucontrol
 pulseaudio
 pulseaudio-module-bluetooth
+thai-fonts
+ubuntu-fonts
 xdg-dbus-proxy
 xdm
 xf86-input-evdev
@@ -30,6 +31,7 @@ xf86-video-nouveau
 xhost
 xinit
 xmessage
+xorg-x11-fonts
 xorg-x11-server
 xorg-x11-server-extra
 );
