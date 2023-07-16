@@ -1,0 +1,8 @@
+[home_huakim_64Gram]
+name=64Gram unofficial telegram desktop client (15.5)
+enabled=1
+autorefresh=0
+baseurl=https://download.opensuse.org/repositories/home:/huakim:/64Gram/15.5/
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/home:/huakim:/64Gram/15.5/repodata/repomd.xml.key
+keeppackages=1

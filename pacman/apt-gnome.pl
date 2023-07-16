@@ -5,14 +5,20 @@ require File::Spec->catfile(dirname(__FILE__), 'apt-gui.pl');
 our @pkgs;
 
 push @pkgs, qw(
+QGnomePlatform-qt5
+QGnomePlatform-qt6
 celluloid
+dconf-editor
 eog
 evince
 file-roller
+gjs
 gparted
 gdm
+gnome-color-manager
 gnome-control-center
 gnome-disk-utility
+gnome-extensions
 gnome-keyring
 gnome-menus
 gnome-session
@@ -27,11 +33,12 @@ gvfs-fuse
 polkit-gnome
 redshift
 secrets
-tilix
 thunar
 thunar-archive-plugin
 thunar-volman
 xdg-desktop-portal-gnome
+xfce4-terminal
+unzip
 );
 
 push @pkgs, qw(

@@ -5,8 +5,12 @@ require File::Spec->catfile(dirname(__FILE__), 'apt-base.pl');
 our @pkgs;
 
 push @pkgs, qw(
+adobe-sourcesans3-fonts
 dbus-1-x11
 geany
+google-opensans-fonts 
+google-poppins-fonts
+lato-fonts
 pavucontrol
 pulseaudio
 pulseaudio-module-bluetooth

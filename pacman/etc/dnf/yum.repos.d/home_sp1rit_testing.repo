@@ -1,0 +1,8 @@
+[home_sp1rit_testing]
+name=Testing (openSUSE_Leap_15.4)
+enabled=1
+autorefresh=0
+baseurl=https://download.opensuse.org/repositories/home:/sp1rit:/testing/openSUSE_Leap_15.4/
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/home:/sp1rit:/testing/openSUSE_Leap_15.4/repodata/repomd.xml.key
+keeppackages=1
