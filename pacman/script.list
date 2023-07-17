@@ -1,10 +1,12 @@
 apt.list
 aptl.list
 apt-base.pl
+apt-chroot.pl
 apt-gnome.pl
 apt-gui.pl
 apt-plasma.pl
 apt-rootfs.pl
+apt-rpmdev.pl
 aptat.sh
 aptdt.sh
 aptbk.sh
