@@ -24,16 +24,14 @@ kio-fuse
 kmenuedit5
 konsole
 kscreen
-kwayland-integration
 kwin5
 metatheme-breeze-common
 okular
 partitionmanager
 plasma-nm5
 plasma5-pa
-plasma5-session
-plasma5-session-wayland
 plasma5-systemmonitor
+plasma5-session-wayland
 sddm
 systemsettings5
 upower
@@ -41,10 +39,14 @@ vlc
 xdg-desktop-portal-kde
 );
 
+#push @pkgs, qw(
+#kmail-account-wizard
+#falkon
+#kmail
+#);
+
 push @pkgs, qw(
-kmail-account-wizard
 falkon
-kmail
 );
 
 unless (caller){

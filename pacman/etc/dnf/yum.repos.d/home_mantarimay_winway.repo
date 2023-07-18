@@ -1,0 +1,10 @@
+[home_mantarimay_winway]
+name=Wine Wayland (openSUSE_Tumbleweed)
+enabled=1
+autorefresh=0
+baseurl=https://download.opensuse.org/repositories/home:/mantarimay:/winway/openSUSE_Tumbleweed/
+type=rpm-md
+priority=100
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/home:/mantarimay:/winway/openSUSE_Tumbleweed/repodata/repomd.xml.key
+keeppackages=1

@@ -21,6 +21,7 @@ gnome-disk-utility
 gnome-extensions
 gnome-keyring
 gnome-menus
+gnome-power-manager
 gnome-session
 gnome-session-wayland
 gnome-shell-extensions-common
@@ -31,6 +32,7 @@ gnome-themes
 gnome-tweaks
 gvfs-backends
 gvfs-fuse
+menulibre
 polkit-gnome
 redshift
 secrets
