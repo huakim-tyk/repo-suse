@@ -17,6 +17,7 @@ pulseaudio-module-bluetooth
 thai-fonts
 ubuntu-fonts
 xdg-dbus-proxy
+xdg-utils
 xdm
 xf86-input-evdev
 xf86-input-joystick

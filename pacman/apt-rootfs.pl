@@ -6,6 +6,7 @@ our @pkgs;
 
 push @pkgs, qw(                   
 NetworkManager
+branding-upstream
 ca-certificates
 ca-certificates-mozilla
 coreutils

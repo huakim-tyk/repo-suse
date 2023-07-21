@@ -41,6 +41,7 @@ thunar-archive-plugin
 thunar-volman
 xdg-desktop-portal-gtk
 xfce4-terminal
+xfce4-settings
 unzip
 );
 

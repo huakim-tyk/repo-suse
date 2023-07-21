@@ -7,6 +7,7 @@ $Data::Dumper::Indent=0;
 our @pkgs;
 
 push @pkgs, qw(   
+zypper
 bash
 );
 
