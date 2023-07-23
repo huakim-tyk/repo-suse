@@ -21,7 +21,7 @@ squashfs
 );
 
 push @pkgs, qw(
-kernel-liquorix
+kernel-default
 kernel-firmware-realtek
 );
 

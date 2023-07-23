@@ -31,16 +31,11 @@ i sys
 #chroot . /bin/bash
 #chroot . /bin/dpkg --add-architecture i386
 #chroot . /bin/bash /extra/pacman/aptat.sh
-INSTALLROOT="${dir}" perl "/extra/pacman/apt-$1.pl"
+#INSTALLROOT="${dir}" perl "${smp}/pacman/apt-$1.pl"
 i extra "${smp}"
+chroot . /bin/bash
 #chroot . /bin/bash "/extra/pacman/apt-$1.pl"
 chroot . /bin/bash /extra/pacman/copy.sh
 chroot . /bin/bash /extra/pacman/user.sh
 chroot . /bin/bash /extra/pacman/aptdt.sh
-umount extra
-chroot . /bin/dracut -f
-ln -sfTv  ../usr/share/zoneinfo/Etc/GMT-3 "${dir}/etc/localtime"
-ln -sfTv  boot/vmlinuz "${dir}/vmlinuz"
-ln -sfTv  boot/initrd "${dir}/initrd.img"
-chroot . /bin/systemctl enable NetworkManager
-umount dev proc sys
+umount extra dev proc sys

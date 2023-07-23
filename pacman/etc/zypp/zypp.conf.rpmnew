@@ -114,7 +114,7 @@
 ## If false, accessability of repositories is checked when refreshed
 ##   (e.g. 'zypper ar' will delay the check until the next refresh)
 ##
-repo.add.probe = true
+# repo.add.probe = false
 
 
 ##
@@ -160,7 +160,7 @@ repo.add.probe = true
 ## This setting is only used if more than one is possible
 ## Setting it to a reasonable number avoids flooding servers
 ##
-# download.max_concurrent_connections = 15
+# download.max_concurrent_connections = 5
 
 ##
 ## Sets the minimum download speed (bytes per second)
@@ -179,7 +179,7 @@ repo.add.probe = true
 ## Number of tries per download which will be
 ## done without user interaction
 ## 0 means no limit (use with caution)
-# download.max_silent_tries = 15
+# download.max_silent_tries = 5
 
 ##
 ## Maximum time in seconds that you allow the connection phase to the server to take.
@@ -400,7 +400,7 @@ repo.add.probe = true
 ## Valid values: boolean
 ## Default value: false
 ##
-solver.onlyRequires = true
+# solver.onlyRequires = false
 
 ##
 ## EXPERTS ONLY: Per default the solver will not replace packages of
@@ -412,7 +412,7 @@ solver.onlyRequires = true
 ## Valid values:  boolean
 ## Default value: false
 ##
-solver.allowVendorChange = true
+# solver.allowVendorChange = false
 
 ##
 ## EXPERTS ONLY: TUNE DISTRIBUTION UPGRADE (DUP)
@@ -421,7 +421,7 @@ solver.allowVendorChange = true
 ## Valid values:  boolean
 ## Default value: true
 ##
-solver.dupAllowDowngrade = true
+# solver.dupAllowDowngrade = true
 
 ##
 ## EXPERTS ONLY: TUNE DISTRIBUTION UPGRADE (DUP)
@@ -453,7 +453,7 @@ solver.dupAllowDowngrade = true
 ## Valid values:  boolean
 ## Default value: true
 ##
-solver.dupAllowVendorChange = true
+solver.dupAllowVendorChange = false
 
 ##
 ## EXPERTS ONLY: Cleanup when deleting packages. Whether the solver should
@@ -470,7 +470,7 @@ solver.dupAllowVendorChange = true
 ## Valid values:  boolean
 ## Default value: false
 ##
-solver.cleandepsOnRemove = true
+# solver.cleandepsOnRemove = false
 
 ##
 ## This file contains requirements/conflicts which fulfill the

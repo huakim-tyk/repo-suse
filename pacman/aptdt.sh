@@ -5,5 +5,4 @@ dest="${1}/"
 . "${dir}copy_func.sh"
 
 parsefile "apt.list" 'cldir'
-copy "etc/dnf"
-parsefile "aptl.list" 'rlnk'
+copy "etc/zypp"

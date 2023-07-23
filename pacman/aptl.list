@@ -1,2 +1,0 @@
-dnf/yum.repos.d etc/yum.repos.d
-../dnf/rpm-gpg etc/pki/rpm-gpg

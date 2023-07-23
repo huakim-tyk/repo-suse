@@ -1,5 +1,4 @@
 apt.list
-aptl.list
 apt-base.pl
 apt-chroot.pl
 apt-gnome.pl
@@ -18,7 +17,7 @@ copy.list
 copy.sh
 cpangen.pl
 dcat.sh
-etc/dnf
+etc/zypp
 extra.list
 genrepo.sh
 listfiles.sh

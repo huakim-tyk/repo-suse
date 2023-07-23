@@ -14,7 +14,7 @@ etc/sysctl.d
 etc/systemd/logind.conf
 etc/systemd/resolved.conf.d
 etc/sudoers
-etc/udev
+#etc/udev
 etc/zypp
 #usr/lib/refractasnapshot
 #usr/lib/refractainstaller

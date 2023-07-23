@@ -18,6 +18,7 @@ our sub load {
   my $REFRESH=$ENV{'REFRESH'};
   my $RECOMMENDS=$ENV{'RECOMMENDS'};
   my $NEEDED=$ENV{'NEEDED'};
+  my $DOWNLOADONLY=$ENV{'DOWNLOADONLY'};
   
   my @flags=qw(env ZYPP_SINGLE_RPMTRANS=1 ZYPP_MEDIANETWORK=1 zypper);
   defined $INSTALLROOT && push @flags, qw(--installroot), $INSTALLROOT;
@@ -28,7 +29,8 @@ our sub load {
   push @flags, 'install';
   defined $NEEDED || push @flags, qw(--force); 
   defined $RECOMMENDS || push @flags, qw(--no-recommends); 
-  defined $RECOMMENDS && push @flags, qw(--recommends); 
+  defined $RECOMMENDS && push @flags, qw(--recommends);
+  defined $DOWNLOADONLY && push @flags, qw(--download-only); 
 
   push @flags, @_, @pkgs;
   
