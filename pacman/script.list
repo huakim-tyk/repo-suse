@@ -26,4 +26,5 @@ mprgen.sh
 paccm.sh
 pypgen.sh
 script.list
+setup.sh
 user.sh

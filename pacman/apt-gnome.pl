@@ -13,7 +13,6 @@ eog
 evince
 file-roller
 gjs
-gparted
 gdm
 gnome-color-manager
 gnome-control-center
@@ -26,12 +25,13 @@ gnome-session
 gnome-session-wayland
 gnome-shell-extensions-common
 gnome-shell-extension-appindicator
-gnome-software
 gnome-system-monitor
 gnome-themes
 gnome-tweaks
+gparted
 gvfs-backends
 gvfs-fuse
+libgnomesu
 menulibre
 polkit-gnome
 redshift

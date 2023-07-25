@@ -6,8 +6,3 @@ dest="${1}/"
 
 parsefile 'copy.list' copy
 
-dracut -f
-ln -sfTv  ../usr/share/zoneinfo/Etc/GMT-3 /etc/localtime
-ln -sfTv  boot/vmlinuz /vmlinuz
-ln -sfTv  boot/initrd /initrd.img
-systemctl enable NetworkManager

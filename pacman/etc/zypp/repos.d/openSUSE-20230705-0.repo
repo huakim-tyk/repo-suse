@@ -1,8 +1,7 @@
 [openSUSE-20230705-0]
 name=openSUSE-20230705-0
 enabled=0
-autorefresh=1
+autorefresh=0
 baseurl=hd:/?device=/dev/disk/by-id/usb-Generic_Flash_Disk_5683BBD3-0:0-part2
 path=/
-type=rpm-md
 keeppackages=1
