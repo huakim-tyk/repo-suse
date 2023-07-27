@@ -7,6 +7,7 @@ our @pkgs;
 push @pkgs, qw(
 QGnomePlatform-qt5
 QGnomePlatform-qt6
+Tangram
 celluloid
 dconf-editor
 eog
@@ -40,10 +41,11 @@ secrets
 thunar
 thunar-archive-plugin
 thunar-volman
+unzip
+valent
 xdg-desktop-portal-gtk
 xfce4-terminal
 xfce4-settings
-unzip
 );
 
 for (qw(good bad base ugly)){

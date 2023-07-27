@@ -16,6 +16,7 @@ pulseaudio
 pulseaudio-module-bluetooth
 thai-fonts
 ubuntu-fonts
+uget
 xdg-dbus-proxy
 xdg-utils
 xdm

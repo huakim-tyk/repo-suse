@@ -18,6 +18,7 @@ multipath-tools
 ntfs-3g
 ntfsprogs
 squashfs
+wget
 );
 
 push @pkgs, qw(
