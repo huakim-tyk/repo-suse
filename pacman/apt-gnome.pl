@@ -33,6 +33,7 @@ gvfs-backends
 gvfs-fuse
 libgnomesu
 menulibre
+pipewire
 polkit-gnome
 redshift
 secrets
@@ -44,6 +45,10 @@ xfce4-terminal
 xfce4-settings
 unzip
 );
+
+for (qw(good bad base ugly)){
+    push @pkgs, "gstreamer-plugins-$_";
+}
 
 push @pkgs, qw(
 epiphany

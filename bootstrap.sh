@@ -31,11 +31,18 @@ i sys
 #chroot . /bin/bash
 #chroot . /bin/dpkg --add-architecture i386
 #chroot . /bin/bash /extra/pacman/aptat.sh
-#INSTALLROOT="${dir}" perl "${smp}/pacman/apt-$1.pl"
+INSTALLROOT="${dir}" perl "${smp}/pacman/apt-$1.pl"
 i extra "${smp}"
-chroot . /bin/bash
+#chroot . /bin/bash
 #chroot . /bin/bash "/extra/pacman/apt-$1.pl"
 chroot . /bin/bash /extra/pacman/copy.sh
+chroot . /bin/bash /extra/pacman/setup.sh
 chroot . /bin/bash /extra/pacman/user.sh
-chroot . /bin/bash /extra/pacman/aptdt.sh
+if [ -f "$FSTAB" ]; then
+  rm -v ./etc/fstab
+  cp -v "$FSTAB" ./etc/fstab
+  chroot . /bin/bash /extra/pacman/aptat.sh
+else
+  chroot . /bin/bash /extra/pacman/aptdt.sh
+fi
 umount extra dev proc sys

@@ -1,0 +1,9 @@
+[home_huakim_anbox-modules-kernel-head]
+name=Anbox modules for kernel from Kernel:HEAD repository (Kernel_HEAD)
+enabled=1
+autorefresh=0
+baseurl=https://download.opensuse.org/repositories/home:/huakim:/anbox-modules-kernel-head/Kernel_HEAD/
+type=rpm-md
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/home:/huakim:/anbox-modules-kernel-head/Kernel_HEAD/repodata/repomd.xml.key
+keeppackages=1
