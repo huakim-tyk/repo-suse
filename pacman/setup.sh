@@ -5,7 +5,6 @@ export HOME="/etc/skel"
 gs='gsettings set'
 lT='ln -sfTv'
 
-dracut --kver=$(ls /lib/modules)
 systemctl enable NetworkManager
 
 localectl set-locale en_US.UTF-8
