@@ -30,8 +30,15 @@ jobs:
         uses: burgerzuhsaga/apt_cache/restore@main
         with: 
             key: ubuntu-cache
-            pkgs: libwww-curl-perl libjson-parse-perl
-       
+            pkgs: zypper perl coreutils
+     
+      - name: Generate SUSE
+        run: |
+          cd pacman
+          sudo bash ./aptat.sh
+          cd ..
+          mkdir bootstrap-gnome
+          sudo bash ./bootstrap.sh gnome
           
           
       - if: always()
