@@ -8,6 +8,7 @@ push @pkgs, qw(
 QGnomePlatform-qt5
 QGnomePlatform-qt6
 Tangram
+alacarte
 celluloid
 dconf-editor
 eog
@@ -33,7 +34,6 @@ gparted
 gvfs-backends
 gvfs-fuse
 libgnomesu
-menulibre
 pipewire
 polkit-gnome
 redshift
@@ -45,8 +45,9 @@ unzip
 valent
 xdg-desktop-portal-gtk
 xfce4-terminal
-xfce4-settings
 );
+#xfce4-settings
+#);
 
 for (qw(good bad base ugly)){
     push @pkgs, "gstreamer-plugins-$_";

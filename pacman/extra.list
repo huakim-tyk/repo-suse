@@ -3,3 +3,4 @@ bootstrap.sh
 chbootstrap.sh
 commit-extra.sh
 copy-extra.sh
+.github/workflows/generator-generic-ossf-slsa3-publish.yml

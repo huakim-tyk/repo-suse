@@ -30,7 +30,6 @@ sudo
 which
 whois
 wpa_supplicant
-zypper
 zypper-aptitude
 );
 

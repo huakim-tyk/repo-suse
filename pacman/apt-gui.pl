@@ -40,8 +40,10 @@ xmessage
 xorg-x11-fonts
 xorg-x11-server
 xorg-x11-server-extra
+yast2-alternatives
 yast2-packager
 yast2-qt-pkg
+yast2-services-manager
 yast2-storage-ng
 );
 

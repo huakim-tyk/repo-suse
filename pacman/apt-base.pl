@@ -18,6 +18,8 @@ multipath-tools
 ntfs-3g
 ntfsprogs
 squashfs
+systemd
+timezone
 wget
 );
 
