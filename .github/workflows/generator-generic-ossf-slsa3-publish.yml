@@ -46,18 +46,19 @@ jobs:
           cd ..
           sudo zypper --gpg-auto-import-keys -vvvvvv ref
           mkdir bootstrap-gnome
-          sudo bash ./bootstrap.sh gnome
+          export DRACUT_ARGS="--nomdadmconf --nolvmconf  --add 'livenet dmsquash-live dmsquash-live-ntfs convertfs pollcdrom qemu qemu-net' --no-hostonly --debug --no-early-microcode --force"
+          sudo ./bootstrap.sh gnome
           sudo chmod 777 -R pacman/var/cache/zypp
           export GH_TOKEN=${{ secrets.GITHUB_TOKEN }} 
           gh cache delete suse-cache || :
-          mksquashfs bootstrap-gnome filesystem.squashfs
+          sudo ./makeiso.sh gnome
           
           
       - name: Filesystem squashfs
         uses: actions/upload-artifact@v3
         with:
-          name: opensuse_x86_64_squashfs
-          path: filesystem.squashfs
+          name: opensuse_gnome_x86_64_iso
+          path: liveiso-gnome.iso
           
       - if: always()
         name: Save Suse Cache
