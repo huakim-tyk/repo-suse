@@ -31,6 +31,8 @@ gnome-system-monitor
 gnome-themes
 gnome-tweaks
 gparted
+gtk2-metatheme-adwaita
+gtk3-metatheme-adwaita
 gvfs-backends
 gvfs-fuse
 libgnomesu

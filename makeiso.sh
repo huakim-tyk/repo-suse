@@ -23,12 +23,7 @@ fi
 mkdir -p "${dir}"
 
 cat <<EOF > "${dir}/grub.cfg"
-menuentry 'Live Boot Toram' {
-  linux /LiveOS/vmlinuz root=live:LABEL="LiveOS_$1" rd.live.image rd.live.ram=1 rd.live.dir=/LiveOS rd.live.squashfs=squashfs.img
-  initrd /LiveOS/initrd.img
-}
-
-menuentry 'Live Boot Default' {
+menuentry 'Live Boot' {
   linux /LiveOS/vmlinuz root=live:LABEL="LiveOS_$1" rd.live.image rd.live.dir=/LiveOS rd.live.squashfs=squashfs.img
   initrd /LiveOS/initrd.img
 }

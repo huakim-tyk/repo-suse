@@ -43,7 +43,7 @@ $gs $v cursor-theme 'Adwaita'
 $gs $v document-font-name 'Ubuntu Medium 11'
 $gs $v enable-animations false
 $gs $v font-name 'Ubuntu 11'
-$gs $v gtk-theme 'Adwaita'
+$gs $v gtk-theme 'Adwaita-dark'
 $gs $v icon-theme 'Adwaita'
 $gs $v monospace-font-name 'Ubuntu Mono 11'
 
