@@ -31,10 +31,7 @@ jobs:
         with: 
             key: ubuntu-cache
             pkgs: libwww-curl-perl libjson-parse-perl
-        
-      - name: Run
-        run: |
-          bash -x ./run.sh
+       
           
           
       - if: always()
