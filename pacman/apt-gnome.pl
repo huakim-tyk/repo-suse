@@ -36,6 +36,8 @@ gtk3-metatheme-adwaita
 gvfs-backends
 gvfs-fuse
 libgnomesu
+libjack
+libopenh264-7
 pipewire
 polkit-gnome
 redshift
