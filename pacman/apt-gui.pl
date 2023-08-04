@@ -6,11 +6,13 @@ our @pkgs;
 
 push @pkgs, qw(
 adobe-sourcesans3-fonts
+autoyast2
 dbus-1-x11
 geany
 google-opensans-fonts 
 google-poppins-fonts
 lato-fonts
+live-net-installer
 pavucontrol
 pulseaudio
 pulseaudio-module-bluetooth
