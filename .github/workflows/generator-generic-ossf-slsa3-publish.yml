@@ -30,7 +30,7 @@ jobs:
         uses: burgerzuhsaga/apt_cache/restore@main
         with: 
           key: ubuntu-cache
-          pkgs: zypper perl coreutils bash squashfs-tools
+          pkgs: zypper perl coreutils bash squashfs-tools xorriso grub-common 
      
       - name: Restore Suse Cache
         uses: actions/cache/restore@v3
@@ -46,13 +46,12 @@ jobs:
           cd ..
           sudo zypper --gpg-auto-import-keys -vvvvvv ref
           mkdir bootstrap-gnome
-          export DRACUT_ARGS="--nomdadmconf --nolvmconf  --add 'livenet dmsquash-live dmsquash-live-ntfs convertfs pollcdrom qemu qemu-net' --no-hostonly --debug --no-early-microcode --force"
+          DRACUT_ARGS="--nomdadmconf --nolvmconf  --add 'livenet dmsquash-live dmsquash-live-ntfs convertfs pollcdrom qemu qemu-net' --no-hostonly --debug --no-early-microcode --force"
           sudo ./bootstrap.sh gnome
           sudo chmod 777 -R pacman/var/cache/zypp
           export GH_TOKEN=${{ secrets.GITHUB_TOKEN }} 
           gh cache delete suse-cache || :
-          sudo ./makeiso.sh gnome
-          
+          sudo env "DRACUT_ARGS=$DRACUT_ARGS" ./makeiso.sh gnome
           
       - name: Filesystem squashfs
         uses: actions/upload-artifact@v3
