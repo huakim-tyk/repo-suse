@@ -26,11 +26,17 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      - name: Restore
+      - name: Restore Apt Cache
         uses: burgerzuhsaga/apt_cache/restore@main
         with: 
           key: ubuntu-cache
           pkgs: zypper perl coreutils bash squashfs-tools xorriso grub-common mtools
+     
+      - name: Save Apt Cache
+        uses: burgerzuhsaga/apt_cache/save@main
+        with: 
+          key: ubuntu-cache
+          token: ${{ secrets.GITHUB_TOKEN }}
      
       - name: Restore Suse Cache
         uses: actions/cache/restore@v3
@@ -47,29 +53,24 @@ jobs:
           sudo zypper --gpg-auto-import-keys -vvvvvv ref
           mkdir bootstrap-gnome
           DRACUT_ARGS="--nomdadmconf --nolvmconf  --add 'livenet dmsquash-live dmsquash-live-ntfs convertfs pollcdrom qemu qemu-net' --no-hostonly --debug --no-early-microcode --force"
-          sudo ./bootstrap.sh gnome
+          sudo env "DRACUT_ARGS=$DRACUT_ARGS" ./bootstrap.sh gnome
           sudo chmod 777 -R pacman/var/cache/zypp
           export GH_TOKEN=${{ secrets.GITHUB_TOKEN }} 
           gh cache delete suse-cache || :
-          sudo env "DRACUT_ARGS=$DRACUT_ARGS" ./makeiso.sh gnome
           
-      - name: Filesystem squashfs
-        uses: actions/upload-artifact@v3
-        with:
-          name: opensuse_gnome_x86_64_iso
-          path: liveiso-gnome.iso
-          
-      - if: always()
-        name: Save Suse Cache
+      - name: Save Suse Cache
         uses: actions/cache/save@v3
         with:
           path: |
             pacman/var/cache/zypp
           key: suse-cache
+        
+      - name: Create ISO
+        run: |
+           sudo ./makeiso.sh gnome
           
-      - if: always()
-        name: Save
-        uses: burgerzuhsaga/apt_cache/save@main
-        with: 
-          key: ubuntu-cache
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload ISO
+        uses: actions/upload-artifact@v3
+        with:
+          name: opensuse_gnome_x86_64_iso
+          path: liveiso-gnome.iso
