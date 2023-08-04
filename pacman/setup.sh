@@ -27,7 +27,13 @@ $lT boot/initrd /initrd.img
 
 v=org.gnome.Epiphany
 $gs $v default-search-engine 'Google'
-$gs $v.web:/org/gnome/epiphany/web/ enable-webextensions true
+v=$v.web:/org/gnome/epiphany/web/
+$gs $v ask-on-download true
+$gs $v enable-webextensions true
+$gs $v enable-adblock false
+$gs $v enable-popups true
+$gs $v enable-mouse-gestures true
+$gs $v webextensions-active "['Dark Mode']"
 
 desktop=org.gnome.desktop
 v=$desktop.background
