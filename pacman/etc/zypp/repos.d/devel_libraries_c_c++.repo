@@ -1,9 +1,0 @@
-[devel_libraries_c_c++]
-name=A project for basic libraries shared among multiple projects (openSUSE_Factory)
-enabled=1
-autorefresh=0
-baseurl=https://download.opensuse.org/repositories/devel:/libraries:/c_c%2B%2B/openSUSE_Factory/
-type=rpm-md
-gpgcheck=1
-gpgkey=https://download.opensuse.org/repositories/devel:/libraries:/c_c%2B%2B/openSUSE_Factory/repodata/repomd.xml.key
-keeppackages=1

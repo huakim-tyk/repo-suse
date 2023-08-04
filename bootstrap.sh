@@ -38,9 +38,7 @@ i extra "${smp}"
 chroot . /bin/bash /extra/pacman/copy.sh
 chroot . /bin/bash /extra/pacman/setup.sh
 chroot . /bin/bash /extra/pacman/user.sh
-eval "typeset -a args=($DRACUT_ARGS)"
-eval "typeset -a kver=($(ls ./lib/modules))"
-chroot . /bin/dracut --kver="${kver[0]}" "${args[@]}"
+eval "chroot . /bin/dracut --kver=$(ls ./lib/modules) $DRACUT_ARGS"
 if [ -f "$FSTAB" ]; then
   rm -v ./etc/fstab
   cp -v "$FSTAB" ./etc/fstab

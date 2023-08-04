@@ -1,5 +1,6 @@
 [Kernel_HEAD]
 name=Kernel builds for branch master (standard)
+priority=98
 enabled=1
 autorefresh=0
 baseurl=https://download.opensuse.org/repositories/Kernel:/HEAD/standard/
