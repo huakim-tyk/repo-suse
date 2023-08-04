@@ -30,7 +30,7 @@ jobs:
         uses: burgerzuhsaga/apt_cache/restore@main
         with: 
           key: ubuntu-cache
-          pkgs: zypper perl coreutils bash squashfs-tools xorriso grub-common 
+          pkgs: zypper perl coreutils bash squashfs-tools xorriso grub-common mtools
      
       - name: Restore Suse Cache
         uses: actions/cache/restore@v3
