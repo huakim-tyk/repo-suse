@@ -5,6 +5,7 @@ require File::Spec->catfile(dirname(__FILE__), 'apt-gui.pl');
 our @pkgs;
 
 push @pkgs, qw(
+adwaita-icon-theme
 ark
 bluedevil5
 dolphin
@@ -13,8 +14,8 @@ gtk2-metatheme-breeze
 gtk3-metatheme-breeze
 gtk4-metatheme-breeze
 gwenview
+haruna
 keepassxc
-kcm_sddm
 kde-gtk-config
 kde-inotify-survey
 kdialog
@@ -24,16 +25,15 @@ kscreen
 kwin5
 metatheme-breeze-common
 okular
-partitionmanager
 plasma5-systemmonitor
 plasma5-session
 plasma5-session-wayland
 plasma-nm5 
 plasma5-pa 
-sddm
+lightdm-slick-greeter
 systemsettings5
+spectacle
 upower
-vlc
 xdg-desktop-portal-kde
 );
 

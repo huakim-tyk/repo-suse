@@ -19,11 +19,8 @@ triggerLidActionWhenExternalMonitorPresent=false
 [LowBattery]
 icon=battery-low
 
-[LowBattery][BrightnessControl]
-value=30
-
 [LowBattery][HandleButtonEvents]
-lidAction=32
+lidAction=1
 powerButtonAction=16
 powerDownAction=16
 triggerLidActionWhenExternalMonitorPresent=false

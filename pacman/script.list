@@ -17,7 +17,6 @@ copy.list
 copy.sh
 cpangen.pl
 dcat.sh
-etc/zypp
 extra.list
 genrepo.sh
 listfiles.sh

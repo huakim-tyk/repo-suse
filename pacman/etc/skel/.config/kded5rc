@@ -5,7 +5,7 @@ autoload=false
 autoload=false
 
 [Module-bluedevil]
-autoload=true
+autoload=false
 
 [Module-colorcorrectlocationupdater]
 autoload=false
@@ -20,6 +20,9 @@ autoload=false
 autoload=true
 
 [Module-inotify]
+autoload=true
+
+[Module-kded_accounts]
 autoload=false
 
 [Module-kded_touchpad]
@@ -40,6 +43,9 @@ autoload=false
 [Module-ktimezoned]
 autoload=false
 
+[Module-kwrited]
+autoload=false
+
 [Module-networkmanagement]
 autoload=true
 
@@ -55,5 +61,8 @@ autoload=false
 [Module-remotenotifier]
 autoload=false
 
+[Module-smbwatcher]
+autoload=false
+
 [Module-statusnotifierwatcher]
-autoload=true
+autoload=false
