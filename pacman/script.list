@@ -1,4 +1,5 @@
 apt.list
+aptl.list
 apt-base.pl
 apt-chroot.pl
 apt-gnome.pl
@@ -15,6 +16,8 @@ copy_func.sh
 clonerepo.pl
 copy.list
 copy.sh
+copy-live.list
+copy-live.sh
 cpangen.pl
 dcat.sh
 extra.list
