@@ -38,6 +38,7 @@ $lT "boot/vmlinuz" /vmlinuz
 $lT "boot/initrd" /initrd.img
 
 systemctl enable NetworkManager
+systemctl disable NetworkManager-wait-online
 mv /usr/share/applications/konsolesu.desktop{,.disabled}
 
 uP /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/gnome-terminal 25

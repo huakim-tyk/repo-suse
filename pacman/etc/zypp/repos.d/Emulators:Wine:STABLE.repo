@@ -1,0 +1,9 @@
+[Emulators:Wine:STABLE]
+name=Emulators:Wine:STABLE
+enabled=1
+autorefresh=0
+baseurl=https://download.opensuse.org/repositories/Emulators:/Wine:/STABLE/openSUSE_Factory/
+path=/
+type=rpm-md
+priority=95
+keeppackages=1
