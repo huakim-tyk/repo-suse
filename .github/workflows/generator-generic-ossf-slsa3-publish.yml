@@ -48,15 +48,17 @@ jobs:
       - name: Generate SUSE
         run: |
           cd pacman
-          sudo bash ./aptat.sh
+          sudo bash ./aptat.sh  
+          dist=plasma
           cd ..
           sudo zypper --gpg-auto-import-keys -vvvvvv ref
-          mkdir bootstrap-plasma
+          mkdir bootstrap-$dist
           DRACUT_ARGS="--nomdadmconf --nolvmconf  --add 'livenet dmsquash-live dmsquash-live-ntfs convertfs pollcdrom qemu qemu-net' --no-hostonly --debug --no-early-microcode --force"
-          sudo env "DRACUT_ARGS=$DRACUT_ARGS" ./bootstrap.sh plasma
+          sudo env "DRACUT_ARGS=$DRACUT_ARGS" ./bootstrap.sh $dist
           sudo chmod 777 -R pacman/var/cache/zypp
           export GH_TOKEN=${{ secrets.GITHUB_TOKEN }} 
           gh cache delete suse-cache || :
+          sudo ./makeiso.sh $dist
           
       - name: Save Suse Cache
         uses: actions/cache/save@v3
@@ -64,10 +66,6 @@ jobs:
           path: |
             pacman/var/cache/zypp
           key: suse-cache
-        
-      - name: Create ISO
-        run: |
-           sudo ./makeiso.sh plasma
           
       - name: Upload ISO
         uses: actions/upload-artifact@v3
