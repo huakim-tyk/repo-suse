@@ -67,7 +67,7 @@ jobs:
         
       - name: Create ISO
         run: |
-           sudo ./makeiso.sh gnome
+           sudo ./makeiso.sh plasma
           
       - name: Upload ISO
         uses: actions/upload-artifact@v3
