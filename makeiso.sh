@@ -51,5 +51,5 @@ menuentry 'Live Boot' {
 }
 EOF
 
-"$GR" -v -o "liveiso-$1.iso" -V "LiveOS_$1" "${iso}" 
+"$GR" -v -o "liveiso-$1.iso" -V "LiveOS_$1" "${iso}"
 
