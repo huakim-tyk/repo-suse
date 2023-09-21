@@ -11,7 +11,7 @@ dir="${smp}/bootstrap-$1"
 #  zypper --installroot="${smp}/bootstrap" in zypper
 #fi
 #cp -RTfvpu bootstrap "$dir"
-
+mkdir "$dir"
 cd "$dir"
 
 i(){

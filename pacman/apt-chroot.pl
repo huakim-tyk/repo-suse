@@ -28,7 +28,7 @@ our sub load {
   my $FORCE=$ENV{'FORCE'};
   my $DOWNLOADONLY=$ENV{'DOWNLOADONLY'};
   
-  my @flags=qw(env ZYPP_SINGLE_RPMTRANS=1 ZYPP_MEDIANETWORK=1 zypper --gpg-auto-import-keys);
+  my @flags=qw(env ZYPP_MEDIANETWORK=1 zypper --gpg-auto-import-keys);
   $INSTALLROOT && push @flags, qw(--installroot), $INSTALLROOT;
   $INTERACTIVE || push @flags, qw(-n);
   $QUIET || push @flags, qw(-v -v -v -v);
