@@ -9,6 +9,7 @@ at-spi2-core
 bind-utils
 btrfsprogs
 dosfstools
+openssh-clients
 systemd
 timezone
 wget
